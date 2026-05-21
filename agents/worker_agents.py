@@ -46,7 +46,7 @@ class CoderAgent(BaseAgent):
         return task
     
     def _write_code(self, requirement: str) -> str:
-        return f"// 实现: {requirement}\n\nfunction main() {\n    console.log('Hello World');\n}\n\nmain();"
+        return "// 实现: " + requirement + "\n\nfunction main() {\n    console.log('Hello World');\n}\n\nmain();"
 
 
 class ReviewerAgent(BaseAgent):
